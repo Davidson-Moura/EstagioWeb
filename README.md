@@ -8,6 +8,6 @@ Está página no github não possui as pastas node_modules e .angular, parar exe
 
 ## Informações do servidor json
 
-Está aplicação usa o arquivo db.json como exemplo de backend, sendo assim a necessidade de instalar a dependência "npm install -g json-server". Parar usar como banco de dados use o comando "json-server --watch db.json --port 3000".
+Está aplicação usa o arquivo db.json como exemplo de backend, sendo assim a necessidade de instalar a dependência "npm install -g json-server". Parar usar como banco de dados use o comando "npm start" dentro da pasta Backend.
 
 
