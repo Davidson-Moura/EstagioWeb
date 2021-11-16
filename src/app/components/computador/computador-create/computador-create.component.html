@@ -1,0 +1,36 @@
+<button class="btn volt" (click)="voltar()">
+    Voltar
+</button>
+
+<div class="card">
+    <form action="">
+        <mat-form-field>
+            <input matInput placeholder="Marca" [(ngModel)]="computador.marca" name="marca">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Modelo" [(ngModel)]="computador.modelo" name="modelo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="PlacaMae" [(ngModel)]="computador.placaMae" name="placaMae">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Memoria" [(ngModel)]="computador.memoria" name="memoria">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hd" [(ngModel)]="computador.hd" name="hd">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="MarcaHd" [(ngModel)]="computador.marcaHd" name="marcaHd">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="VelocidadeProcessador" [(ngModel)]="computador.velocidadeProcessador" name="velocidadeProcessador">
+        </mat-form-field>
+
+        <label for="imagem">Imagem</label>
+        <input type="file" id="imagem" [(ngModel)]="computador.imagem" name="imagem" (change)="onChange()">
+
+    </form>
+    <button class="btn" style="display:flex;margin-top: 10px; margin-left: auto; margin-right: 10px;" (click)="criar('Computador cadastrado com sucesso.')">
+        Cadastrar
+    </button>
+</div>

@@ -1,0 +1,37 @@
+<button class="btn volt" (click)="voltar()">
+    Voltar
+</button>
+
+<div class="card">
+    <h2 style="text-align: center;">Resultado da pesquisa</h2>
+    <br>
+    <table border="1" cellspacing="10" bgcolor="gray" style="color:white; border-radius: 0.3rem;">
+        <tr>
+            <th>Id</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Placa-mãe</th>
+            <th>Memória RAM</th>
+            <th>HD</th> 
+            <th>Marca HD</th>
+            <th>Velocidade do processador</th>
+            <th>Imagem nome</th>
+            <th>Editar</th>
+        </tr>
+        
+             
+        <tr *ngFor="let comp of comps">
+            <td>{{comp.id}}</td>
+            <td>{{comp.marca}}</td>
+            <td>{{comp.modelo}}</td>
+            <td>{{comp.placaMae}}</td>
+            <td>{{comp.memoria}}</td>
+            <td>{{comp.hd}}</td>
+            <td>{{comp.marcaHd}}</td>
+            <td>{{comp.velocidadeProcessador}}</td>
+            <td>{{comp.imagem}}</td>
+            <td><Button class="btn" id={{comp.id}} (click)=[editar(comp.id)]>Editar</Button></td>
+        </tr>
+        
+    </table>
+</div>

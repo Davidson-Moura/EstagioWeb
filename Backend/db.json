@@ -1,0 +1,26 @@
+{
+  "computadores": [
+    {
+      "id": "1",
+      "marca": "Marca Exemplo",
+      "modelo": "Modelo Exemplo",
+      "placaMae": "PlacaMãe Exemplo",
+      "memoria": "Memoria Exemplo",
+      "hd": "HD Exemplo",
+      "marcaHd": "MarcaHD Exemplo",
+      "velocidadeProcessador": "velocidadeProcessador Exemplo",
+      "imagem": "nome da imagem Exemplo"
+    },
+    {
+      "marca": "marca1",
+      "modelo": "modelo1",
+      "placaMae": "placa1",
+      "memoria": "memoria1",
+      "hd": "hd1",
+      "marcaHd": "marcahd2",
+      "velocidadeProcessador": "velocidade1",
+      "imagem": "imagem1.jpeg",
+      "id": "g-QzwaJ"
+    }
+  ]
+}

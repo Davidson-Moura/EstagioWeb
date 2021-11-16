@@ -1,0 +1,17 @@
+<button class="btn volt" (click)="voltar()">
+    Voltar
+</button>
+
+<div class="card">
+    <div style="display:flex;justify-content: space-around;">
+        <form class="display:flex;">        
+            <mat-form-field>
+                <input matInput placeholder="Pesquisar" [(ngModel)]="pesquisar" name="pesquisar">
+            </mat-form-field>
+            
+            <button class="btn" style="width: 65%" (click)="pesquisar1()">pesquisar</button>
+            <br>
+        </form>
+    </div>
+    <h3 style="margin-top: 20px;text-align: center;">Os valores aceitos pela pesquisa: id, marca, modelo, placaMae, memoria, hd, marcaHd, velocidadeProcessador, imagem(pelo nome) e substring's</h3>    
+</div>

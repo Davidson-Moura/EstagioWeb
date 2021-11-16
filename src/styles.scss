@@ -2,3 +2,32 @@
 
 html, body { height: 100%; background-color: rgb(214, 214, 214);}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card{
+    padding: 10px;
+    margin: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.247);
+}
+.card h2{
+    margin-bottom:0;
+}
+.btn{
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    font-size: 18px;
+    box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.329);
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.volt{
+    background-color: rgb(255, 68, 68);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
