@@ -18,10 +18,11 @@ export class ComputadorPesquisarComponent implements OnInit {
 
   ngOnInit(): void {
     this.pesquisa =this.route.snapshot.paramMap.get('pesquisa');
+    this.pesquisa = this.pesquisa.toLowerCase();
     this.servico.mostrarComputadores().subscribe(r=>{
       r.forEach(
         element => {
-          if((element.id!=null && element.id.indexOf(this.pesquisa)>-1 ) || element.marca.indexOf(this.pesquisa)>-1 || element.modelo.indexOf(this.pesquisa)>-1 || element.placaMae.indexOf(this.pesquisa)>-1 || element.memoria.indexOf(this.pesquisa)>-1 || element.hd.indexOf(this.pesquisa)>-1 || element.marcaHd.indexOf(this.pesquisa)>-1 || element.velocidadeProcessador.indexOf(this.pesquisa)>-1 || element.imagem.indexOf(this.pesquisa)>-1 ){
+          if((element.id!=null && element.id.toLowerCase().indexOf(this.pesquisa)>-1 ) || element.marca.toLowerCase().indexOf(this.pesquisa)>-1 || element.modelo.toLowerCase().indexOf(this.pesquisa)>-1 || element.placaMae.toLowerCase().indexOf(this.pesquisa)>-1 || element.memoria.toLowerCase().indexOf(this.pesquisa)>-1 || element.hd.toLowerCase().indexOf(this.pesquisa)>-1 || element.marcaHd.toLowerCase().indexOf(this.pesquisa)>-1 || element.velocidadeProcessador.toLowerCase().indexOf(this.pesquisa)>-1 || element.imagem.indexOf(this.pesquisa)>-1 ){
             this.comps.push(element);
           }
         });      

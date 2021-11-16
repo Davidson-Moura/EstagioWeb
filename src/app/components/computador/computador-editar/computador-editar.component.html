@@ -3,39 +3,45 @@
 </button>
 
 <div class="card">
-    <H2>Computador de id: {{id}}</H2>
-    <form >
-
-        <mat-form-field>
-            <input matInput placeholder="Marca" [(ngModel)]="comp.marca" name="marca">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Modelo" [(ngModel)]="comp.modelo" name="modelo">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="PlacaMae" [(ngModel)]="comp.placaMae" name="placaMae">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Memoria" [(ngModel)]="comp.memoria" name="memoria">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Hd" [(ngModel)]="comp.hd" name="hd">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="MarcaHd" [(ngModel)]="comp.marcaHd" name="marcaHd">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="VelocidadeProcessador" [(ngModel)]="comp.velocidadeProcessador" name="velocidadeProcessador">
-        </mat-form-field>
+    <H1 style="text-align: center;">Computador de id: {{id}}</H1>
+    <div style=" justify-content: space-around; display: flex; ">
+        <form style="display: flex;width: 50%;">
+            <mat-form-field>
+                <input matInput placeholder="Marca" [(ngModel)]="comp.marca" name="marca">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Modelo" [(ngModel)]="comp.modelo" name="modelo">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="PlacaMae" [(ngModel)]="comp.placaMae" name="placaMae">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Memoria" [(ngModel)]="comp.memoria" name="memoria">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Hd" [(ngModel)]="comp.hd" name="hd">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="MarcaHd" [(ngModel)]="comp.marcaHd" name="marcaHd">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="VelocidadeProcessador" [(ngModel)]="comp.velocidadeProcessador" name="velocidadeProcessador">
+            </mat-form-field>
+            
+            <label for="imagem">Imagem</label>
+            <input type="file" id="imagem" [(ngModel)]="comp.imagem" name="imagem" >
+                        
+            <span style="display:flex;justify-content: space-between; margin-top: 40px; ">
+                <button class="btn volt" (click)="excluir('Computador cadastrado com sucesso.')">
+                    Excluir
+                </button>
+                <button class="btn" (click)="modificar()">
+                    Modificar
+                </button>                   
+            </span>
+            
+            
+        </form>
         
-        <label for="imagem">Imagem</label>
-        <input type="file" id="imagem" [(ngModel)]="comp.imagem" name="imagem" >
-        
-    </form>
-    <button class="btn" style="display:flex;margin-top: 10px; margin-left: auto; margin-right: 10px;" (click)="modificar()">
-        Modificar
-    </button>
-    <button class="btn volt" style="display:flex;margin-top: 10px; margin-left: auto; margin-right: 10px;" (click)="excluir('Computador cadastrado com sucesso.')">
-        Excluir
-    </button>
+    </div>
 </div>

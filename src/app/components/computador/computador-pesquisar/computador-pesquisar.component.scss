@@ -1,0 +1,11 @@
+table{
+    border-radius: 0.1rem;width: 100%;
+}    
+th {
+    background-color: rgb(255, 68, 68);
+    color: white;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: rgb(255, 119, 119)}

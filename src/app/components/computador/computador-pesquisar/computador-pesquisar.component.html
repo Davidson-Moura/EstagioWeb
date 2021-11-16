@@ -3,9 +3,9 @@
 </button>
 
 <div class="card">
-    <h2 style="text-align: center;">Resultado da pesquisa</h2>
+    <h1 style="text-align: center;">Resultado da pesquisa</h1>
     <br>
-    <table border="1" cellspacing="10" bgcolor="gray" style="color:white; border-radius: 0.3rem;">
+    <table >
         <tr>
             <th>Id</th>
             <th>Marca</th>
@@ -30,7 +30,7 @@
             <td>{{comp.marcaHd}}</td>
             <td>{{comp.velocidadeProcessador}}</td>
             <td>{{comp.imagem}}</td>
-            <td><Button class="btn" id={{comp.id}} (click)=[editar(comp.id)]>Editar</Button></td>
+            <td><Button style="width: 100%;" class="btn" id={{comp.id}} (click)=[editar(comp.id)]>Editar</Button></td>
         </tr>
         
     </table>

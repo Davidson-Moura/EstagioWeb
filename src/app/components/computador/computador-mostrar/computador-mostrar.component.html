@@ -3,7 +3,8 @@
 </button>
 
 <div class="card">
-    <table border="1" cellspacing="10" bgcolor="gray" style="color:white; border-radius: 0.3rem;">
+    <h1 style="margin-bottom: 30px;text-align: center;">Todos os computadores</h1>
+    <table >
         <tr>
             <th>Id</th>
             <th>Marca</th>
@@ -26,7 +27,7 @@
             <td>{{comp.marcaHd}}</td>
             <td>{{comp.velocidadeProcessador}}</td>
             <td>{{comp.imagem}}</td>
-            <td><Button class="btn" id={{comp.id}} (click)=[editar(comp.id)]>Editar</Button></td>
+            <td><Button class="btn" style="width: 100%;"  id={{comp.id}} (click)=[editar(comp.id)]>Editar</Button></td>
         </tr>
     </table>
 </div>
