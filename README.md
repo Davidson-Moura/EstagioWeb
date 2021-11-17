@@ -2,7 +2,7 @@
 
 Projeto criado com angular version 13.0.2
 
-link para baixar a pasta zipada do projeto: https://drive.google.com/drive/folders/1ltUTwi588DDjlLwpXiNdP71lVWf3AEOy?usp=sharing
+link para baixar a pasta zipada do projeto: https://drive.google.com/drive/folders/1ltUTwi588DDjlLwpXiNdP71lVWf3AEOy?usp=sharing ou https://1drv.ms/u/s!AsciWB_7wAhujkw1HvkypI0ozBVR?e=IlxvRr
 
 Para rodar o projeto use o comando "npm start" dentro da pasta Backend e em outro terminal use o comando "npm start" dentro da pasta raiz do projeto.
 
